@@ -1,5 +1,6 @@
 import About from "./About";
 import Banner from "./Banner";
+import NewsSection from "./NewsSection";
 import PatientSays from "./PatientSays";
 import Schedule from "./Schedule";
 import SkillSection from "./SkillSection";
@@ -12,6 +13,7 @@ const Home = () => {
       <About />
       <Schedule />
       <PatientSays />
+      <NewsSection />
     </div>
   );
 };

@@ -25,10 +25,10 @@ const PatientSays = () => {
           backgroundSize: "cover",
         }}
       >
-        <div className="w-1/2 bg-gradient-to-r from-indigo-500">
+        <div className="w-1/2 bg-gradient-to-r from-indigo-600">
           <Slider
             {...settings}
-            className="text-3xl mb-24 px-8 py-24 text-center font-semibold"
+            className="text-3xl mb-24 px-8 py-24 text-center font-semibold text-white"
           >
             <div className="min-h-80">
               <h3>

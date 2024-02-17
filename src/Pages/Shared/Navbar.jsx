@@ -24,6 +24,46 @@ const Navbar = () => {
           Work
         </NavLink>
       </li>
+      <li>
+        <NavLink
+          to="/work"
+          className={({ isActive, isPending }) =>
+            isPending ? "pending" : isActive ? "active" : ""
+          }
+        >
+          About
+        </NavLink>
+      </li>
+      <li>
+        <NavLink
+          to="/work"
+          className={({ isActive, isPending }) =>
+            isPending ? "pending" : isActive ? "active" : ""
+          }
+        >
+          Schedule
+        </NavLink>
+      </li>
+      <li>
+        <NavLink
+          to="/work"
+          className={({ isActive, isPending }) =>
+            isPending ? "pending" : isActive ? "active" : ""
+          }
+        >
+          Reviews
+        </NavLink>
+      </li>
+      <li>
+        <NavLink
+          to="/work"
+          className={({ isActive, isPending }) =>
+            isPending ? "pending" : isActive ? "active" : ""
+          }
+        >
+          Blogs
+        </NavLink>
+      </li>
     </>
   );
 
@@ -58,7 +98,7 @@ const Navbar = () => {
           <a className="btn btn-ghost text-xl">Wellness</a>
         </div>
         <div className="navbar-center hidden lg:flex">
-          <ul className="menu menu-horizontal px-1">{navItem}</ul>
+          <ul className="menu menu-horizontal px-1 font-bold">{navItem}</ul>
         </div>
         <div className="navbar-end">
           <a className="btn btn-accent rounded-full text-white">Let,s Talk</a>

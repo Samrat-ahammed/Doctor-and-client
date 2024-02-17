@@ -16,7 +16,7 @@ const SkillSection = () => {
       </div>
       <div>
         <div className="grid grid-cols-4 gap-9">
-          <div className="bg-purple-300 text-center items-center mx-auto px-5 py-8 rounded-sm space-y-5">
+          <div className="bg-indigo-500 text-center items-center mx-auto px-5 py-8 rounded-sm space-y-5">
             <div className="font-bold text-8xl">
               <FaHeartbeat className="items-center mx-auto" />
             </div>
@@ -25,7 +25,7 @@ const SkillSection = () => {
               <p>Lorem ipsum, dolor sit amet consectetur adipisicing</p>
             </div>
           </div>
-          <div className="bg-purple-300 text-center items-center mx-auto px-5 py-8 rounded-sm space-y-5">
+          <div className="bg-purple-400 text-center items-center mx-auto px-5 py-8 rounded-sm space-y-5">
             <div className="font-bold text-8xl">
               <FaHeartbeat className="items-center mx-auto" />
             </div>
@@ -34,7 +34,7 @@ const SkillSection = () => {
               <p>Lorem ipsum, dolor sit amet consectetur adipisicing</p>
             </div>
           </div>
-          <div className="bg-purple-300 text-center items-center mx-auto px-5 py-8 rounded-sm space-y-5">
+          <div className="bg-pink-500 text-center items-center mx-auto px-5 py-8 rounded-sm space-y-5">
             <div className="font-bold text-8xl">
               <FaHeartbeat className="items-center mx-auto" />
             </div>
@@ -43,7 +43,7 @@ const SkillSection = () => {
               <p>Lorem ipsum, dolor sit amet consectetur adipisicing</p>
             </div>
           </div>
-          <div className="bg-purple-300 text-center items-center mx-auto px-5 py-8 rounded-sm space-y-5">
+          <div className="bg-sky-500 text-center items-center mx-auto px-5 py-8 rounded-sm space-y-5">
             <div className="font-bold text-8xl">
               <FaHeartbeat className="items-center mx-auto" />
             </div>
