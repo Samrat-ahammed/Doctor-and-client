@@ -37,13 +37,13 @@ const Banner = () => {
               </div>
             </div>
           </div>
-          <div className="w-1/3 ">
+          {/* <div className="w-1/3 ">
             <img
               className="w-full"
-              src="https://i.ibb.co/kDBp3HJ/pngwing-com.png"
+              src="https://i.ibb.co/MfD3110/pexels-pixabay-40568.jpg"
               alt=""
             />
-          </div>
+          </div> */}
         </div>
       </div>
     </div>
