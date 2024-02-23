@@ -4,37 +4,37 @@ import { IoMdArrowForward } from "react-icons/io";
 
 const NewsSection = () => {
   return (
-    <div className="space-y-6 container mx-auto">
+    <div className="container mx-auto space-y-6">
       <div className="mb-14">
         {" "}
         <h1 className="text-3xl font-bold text-center">
           Let,s see Our{" "}
-          <span className="text-blue-600 font-bold underline">latest</span> Says
+          <span className="font-bold text-blue-600 underline">latest</span> Says
         </h1>
       </div>
 
-      <div className="flex justify-between gap-4">
+      <div className="justify-between gap-4 lg:flex">
         {/* left side  */}
-        <div className="w-1/2 space-y-6">
+        <div className="space-y-6 lg:w-1/2">
           <div className="">
             <img
-              className="rounded-lg h-full w-full"
+              className="w-full h-full rounded-lg"
               src="https://i.ibb.co/yYxwXPt/1583952355-1997-jpg.webp"
               alt=""
             />
           </div>
           <div className="space-y-6">
             <div className="flex justify-between">
-              <h1 className="flex justify-center text-center items-center gap-2 text-xl font-bold">
+              <h1 className="flex items-center justify-center gap-2 text-xl font-bold text-center">
                 <RxAvatar />
                 by mario cavira
               </h1>
-              <h1 className="flex justify-center text-center items-center gap-2 text-xl font-bold">
+              <h1 className="flex items-center justify-center gap-2 text-xl font-bold text-center">
                 <FaRegCalendarAlt />
                 01/12/2021
               </h1>
             </div>
-            <h1 className="font-bold text-4xl">
+            <h1 className="text-4xl font-bold">
               Join me for a respectfully Fight for <br /> COVID misinformation
             </h1>
             <p>
@@ -49,67 +49,67 @@ const NewsSection = () => {
         </div>
 
         {/* right side  */}
-        <div className="w-1/2 space-y-6">
+        <div className="space-y-6 lg:w-1/2">
           <div className="flex justify-between">
-            <h3 className="underline font-semibold">Latest News</h3>
-            <a className="underline font-semibold flex justify-center text-center items-center gap-2">
+            <h3 className="font-semibold underline">Latest News</h3>
+            <a className="flex items-center justify-center gap-2 font-semibold text-center underline">
               View All <IoMdArrowForward />
             </a>
           </div>
 
           {/* card.....  */}
-          <div className="shadow-lg py-4 px-4 rounded-lg">
+          <div className="px-4 py-4 rounded-lg shadow-lg">
             <div className="flex items-center gap-6">
               <img
                 className="w-1/3 rounded-lg"
                 src="https://i.ibb.co/HYzdM5R/doctor.jpg"
                 alt=""
               />
-              <div className="w-1/2 text-2xl font-semibold space-y-4">
+              <div className="w-1/2 space-y-4 text-2xl font-semibold">
                 <h4>
                   Empowering Health, Where Compassionate Care Meets Cutting-Edge
                   Medicine
                   <br /> Inspiring Wellness
                 </h4>
-                <h4 className="underline font-semibold flex text-center text-red-500 badge badge-outline items-center gap-2">
+                <h4 className="flex items-center gap-2 font-semibold text-center text-red-500 underline badge badge-outline">
                   Reed More <IoMdArrowForward />
                 </h4>
               </div>
             </div>
           </div>
-          <div className="shadow-lg py-4 px-4 rounded-lg">
+          <div className="px-4 py-4 rounded-lg shadow-lg">
             <div className="flex items-center gap-6">
               <img
                 className="w-1/3 rounded-lg"
                 src="https://i.ibb.co/HHbDDSX/doct3.webp"
                 alt=""
               />
-              <div className="w-1/2 text-2xl font-semibold space-y-4">
+              <div className="w-1/2 space-y-4 text-2xl font-semibold">
                 <h4>
                   Empowering Health, Where Compassionate Care Meets Cutting-Edge
                   Medicine
                   <br /> Inspiring Wellness
                 </h4>
-                <h4 className="underline font-semibold flex text-center text-red-500 badge badge-outline items-center gap-2">
+                <h4 className="flex items-center gap-2 font-semibold text-center text-red-500 underline badge badge-outline">
                   Reed More <IoMdArrowForward />
                 </h4>
               </div>
             </div>
           </div>
-          <div className="shadow-lg py-4 px-4 rounded-lg">
+          <div className="px-4 py-4 rounded-lg shadow-lg">
             <div className="flex items-center gap-6">
               <img
                 className="w-1/3 rounded-lg"
                 src="https://i.ibb.co/HYzdM5R/doctor.jpg"
                 alt=""
               />
-              <div className="w-1/2 text-2xl font-semibold space-y-4">
+              <div className="w-1/2 space-y-4 text-2xl font-semibold">
                 <h4>
                   Empowering Health, Where Compassionate Care Meets Cutting-Edge
                   Medicine
                   <br /> Inspiring Wellness
                 </h4>
-                <h4 className="underline font-semibold flex text-center text-red-500 badge badge-outline items-center gap-2">
+                <h4 className="flex items-center gap-2 font-semibold text-center text-red-500 underline badge badge-outline">
                   Reed More <IoMdArrowForward />
                 </h4>
               </div>

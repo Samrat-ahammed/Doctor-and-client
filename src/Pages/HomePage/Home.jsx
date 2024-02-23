@@ -7,7 +7,7 @@ import SkillSection from "./SkillSection";
 
 const Home = () => {
   return (
-    <div className="space-y-24 font-poppins">
+    <div className="space-y-24 font-poppins sm:mx-2">
       <Banner />
       <SkillSection />
       <About />

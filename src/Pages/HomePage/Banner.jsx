@@ -2,14 +2,14 @@ const Banner = () => {
   return (
     <div>
       <div
-        className="hero min-h-screen container mx-auto"
+        className="container min-h-screen mx-auto hero"
         style={{
           backgroundImage: "url(https://i.ibb.co/0ys8SP8/back.jpg)",
         }}
       >
         <div className="hero-overlay bg-opacity-60"></div>
-        <div className="flex justify-between px-4 py-5 items-center">
-          <div className="text-neutral-content w-1/2">
+        <div className="flex items-center justify-between px-4 py-5">
+          <div className="text-center text-neutral-content">
             <div className="">
               <h1 className="text-2xl font-bold text-black">
                 Your Trusted Partner in Comprehensive Care
@@ -22,16 +22,16 @@ const Banner = () => {
                 <br />
                 <span className="text-blue-900 underline">Excellence</span>
               </p>
-              <p className="text-black font-bold mb-5">
+              <p className="w-1/2 mx-auto mb-5 font-bold text-center text-black ">
                 Transforming Lives, One Diagnosis at a Time: Your Gateway to
                 Exceptional HealthcareUnveiling a Path to Optimal Health: Your
                 Dedicated Team for Holistic Care and Healing
               </p>
-              <div className="flex gap-4">
-                <button className="btn btn-primary rounded-full">
+              <div className="flex justify-center gap-4">
+                <button className="rounded-full btn btn-primary">
                   Get Appointment
                 </button>
-                <button className="btn btn-primary badge badge-outline rounded-full">
+                <button className="rounded-full btn btn-primary badge badge-outline">
                   View Profile
                 </button>
               </div>

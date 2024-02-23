@@ -15,20 +15,20 @@ const PatientSays = () => {
     <div className="space-y-6">
       <h1 className="text-3xl font-bold text-center">
         Let,s see What{" "}
-        <span className="text-blue-600 font-bold underline">Patient</span> Says
+        <span className="font-bold text-blue-600 underline">Patient</span> Says
       </h1>
       <div
-        className="flex"
+        className="lg:flex"
         style={{
           backgroundImage: "url(https://i.ibb.co/0ys8SP8/back.jpg)",
           backgroundRepeat: "no-repeat",
           backgroundSize: "cover",
         }}
       >
-        <div className="w-1/2 bg-gradient-to-r from-indigo-600">
+        <div className="lg:w-1/2 bg-gradient-to-r from-indigo-600">
           <Slider
             {...settings}
-            className="text-3xl mb-24 px-8 py-24 text-center font-semibold text-white"
+            className="px-8 py-24 mb-24 text-3xl font-semibold text-center text-white"
           >
             <div className="min-h-80">
               <h3>
@@ -50,8 +50,8 @@ const PatientSays = () => {
             </div>
           </Slider>
         </div>
-        <div className="w-1/2 text-center my-auto italic">
-          <h1 className="text-5xl font-bold bg-gradient-to-r from-indigo-500 text-white py-3 rounded-lg">
+        <div className="my-auto italic text-center lg:w-1/2">
+          <h1 className="py-3 text-5xl font-bold text-white rounded-lg bg-gradient-to-r from-indigo-500">
             Client Says
           </h1>
         </div>
