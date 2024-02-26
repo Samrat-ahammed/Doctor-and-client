@@ -1,0 +1,105 @@
+:root {
+  --background: #e4e4e4; /* Light gray background */
+  --accent: #1e1d23; /* Purple accent color */
+  --otherAccent: #ff7e67; /* Coral accent color */
+  --darkBackground: #2d3436; /* Dark gray background */
+}
+
+#card-container {
+  height: 400px;
+  width: 350px;
+  padding: 20px;
+  border-radius: 5px;
+  background: var(--background);
+  position: relative;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2); /* Light box shadow */
+}
+
+.profile-img {
+  height: 100px;
+  width: 100px;
+  background-color: #ddd; /* Light gray background color for profile image */
+  /* Uncomment the following line if you want to use a background image */
+  /* background: url("https://images.unsplash.com/photo-1504933350103-e840ede978d4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=564&q=80"); */
+  background-size: cover;
+  background-position: center;
+  position: absolute;
+  top: -25px;
+  left: -25px;
+  border-radius: 50%;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3); /* Slightly darker box shadow */
+}
+
+h1 {
+  font-family: "Sriracha", arial, sans-serif;
+  text-align: center;
+  margin-bottom: 20px;
+  color: var(--accent); /* Purple accent color for the heading */
+}
+
+.description {
+  margin-bottom: 20px;
+  text-align: center;
+  color: #555; /* Dark gray text color */
+}
+
+.social {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: calc(100% - 40px);
+  margin: 0 auto;
+}
+
+.social a {
+  text-align: center;
+  border: solid 2px var(--accent); /* Purple accent color for social links border */
+  width: 75px;
+  padding: 5px 0;
+  border-radius: 5px;
+  color: var(--accent); /* Purple accent color for social links text */
+}
+
+.social a:hover {
+  background: var(--accent); /* Purple accent color for background on hover */
+  color: white; /* White text color on hover */
+  cursor: pointer;
+}
+
+.dR-button {
+  width: 80%;
+  height: 80px;
+  font-size: 2rem;
+  margin: 30px 10% 0 10%;
+  color: var(--background);
+  border: none;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3); /* Slightly darker box shadow */
+  border-radius: 5px;
+  background: linear-gradient(
+    45deg,
+    #5788fa,
+    #8682e4
+  ); /* Purple to dark purple gradient for button background */
+  background-size: 200% auto;
+  animation: gradientBG 1.5s ease-in-out infinite; /* Adding animation for gradient */
+  outline: none;
+  transition: all 5000ms ease-in-out;
+}
+.dR-button:hover {
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3); /* Slightly darker box shadow on hover */
+  transform: translateY(2px);
+}
+
+.dR-button:active {
+  box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.3); /* Slightly darker box shadow on active */
+  transform: translateY(4px);
+}
+
+@keyframes gradientBG {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 100% 50%;
+  }
+}

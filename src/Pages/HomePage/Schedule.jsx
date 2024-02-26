@@ -53,7 +53,7 @@ const Schedule = () => {
             src="https://i.ibb.co/6r62sKS/doctor.jpg"
             alt=""
           />
-          <div className="absolute px-6 py-3 transform -translate-x-1/2 -translate-y-1/2 bg-white border border-orange-500 rounded-lg shadow-xl top-1/2 left-1/2 lg:w-3/4 md:w-full sm:w-5/6 xs:w-11/12 sm:p-4">
+          <div className="absolute px-6 py-3 transform -translate-x-1/2 -translate-y-1/2 bg-white border border-orange-500 rounded-lg shadow-xl left-1/2 lg:w-3/4 md:w-full sm:w-5/6 xs:w-11/12 sm:p-4">
             <h1 className="mb-5 text-lg font-bold text-center lg:text-xl text-emerald-800">
               Go to improvement
             </h1>

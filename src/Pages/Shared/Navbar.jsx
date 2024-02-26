@@ -1,4 +1,4 @@
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import logo from "../.././assets/logo2.jpeg";
 
 const Navbar = () => {
@@ -16,12 +16,12 @@ const Navbar = () => {
       </li>
       <li>
         <NavLink
-          to="/work"
+          to="/advice"
           className={({ isActive, isPending }) =>
             isPending ? "pending" : isActive ? "active" : ""
           }
         >
-          Work
+          Advice
         </NavLink>
       </li>
       <li>
@@ -69,13 +69,13 @@ const Navbar = () => {
 
   return (
     <div className="container mx-auto">
-      <div className="navbar container fixed">
+      <div className="container fixed navbar">
         <div className="navbar-start">
           <div className="dropdown">
             <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                className="h-5 w-5"
+                className="w-5 h-5"
                 fill="none"
                 viewBox="0 0 24 24"
                 stroke="currentColor"
@@ -95,13 +95,18 @@ const Navbar = () => {
               {navItem}
             </ul>
           </div>
-          <a className="btn btn-ghost text-xl">Wellness</a>
+          <a className="text-xl btn btn-ghost">Wellness</a>
         </div>
-        <div className="navbar-center hidden lg:flex">
-          <ul className="menu menu-horizontal px-1 font-bold">{navItem}</ul>
+        <div className="hidden navbar-center lg:flex">
+          <ul className="px-1 font-bold menu menu-horizontal">{navItem}</ul>
         </div>
         <div className="navbar-end">
-          <a className="btn btn-accent rounded-full text-white">Let,s Talk</a>
+          <Link
+            to={"/login"}
+            className="text-white rounded-full btn btn-accent"
+          >
+            Let,s Talk
+          </Link>
         </div>
       </div>
     </div>
