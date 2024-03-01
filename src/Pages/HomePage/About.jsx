@@ -1,6 +1,11 @@
 // import { FcRating } from "react-icons/fc";
+import { motion } from "framer-motion";
 
 const About = () => {
+  const message = "Provident cupiditate voluptatem et in. Quaerationem quasi";
+
+  const wordArray = message.split(" ");
+
   return (
     <div className="">
       <div className="container mx-auto">
@@ -63,10 +68,19 @@ const About = () => {
           <div className="md:text-center md:mt-8">
             <h1 className="text-xl font-bold">About Me</h1>
             <p className="mb-5 text-3xl font-bold">
-              <span className="font-bold text-blue-900 underline">
-                Provident
-              </span>{" "}
-              cupiditate voluptatem et in. Quaerationem quasi
+              {wordArray.map((word, index) => (
+                <motion.span
+                  initial={{ opacity: 0 }}
+                  animate={{ opacity: 1 }}
+                  transition={{
+                    duration: 1,
+                    delay: index / 10,
+                  }}
+                  key={index}
+                >
+                  {word}{" "}
+                </motion.span>
+              ))}
             </p>
             <p className="mb-5 text-sm font-bold">
               Lorem ipsum dolor sit amet consectetur adipisicing elit.

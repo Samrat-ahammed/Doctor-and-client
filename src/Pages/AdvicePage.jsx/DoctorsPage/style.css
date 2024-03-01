@@ -1,6 +1,6 @@
 :root {
-  --background: #e4e4e4; /* Light gray background */
-  --accent: #1e1d23; /* Purple accent color */
+  --background: #f9f9f9; /* Light gray background */
+  --accent: #626fff; /* Purple accent color */
   --otherAccent: #ff7e67; /* Coral accent color */
   --darkBackground: #2d3436; /* Dark gray background */
 }
@@ -30,7 +30,7 @@
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3); /* Slightly darker box shadow */
 }
 
-h1 {
+.dr-Name {
   font-family: "Sriracha", arial, sans-serif;
   text-align: center;
   margin-bottom: 20px;
@@ -77,14 +77,13 @@ h1 {
   border-radius: 5px;
   background: linear-gradient(
     45deg,
-    #5788fa,
-    #8682e4
+    var(--accent),
+    var(--otherAccent),
+    var(--otherAccent),
+    var(--accent)
   ); /* Purple to dark purple gradient for button background */
-  background-size: 200% auto;
-  animation: gradientBG 1.5s ease-in-out infinite; /* Adding animation for gradient */
-  outline: none;
-  transition: all 5000ms ease-in-out;
 }
+
 .dR-button:hover {
   box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3); /* Slightly darker box shadow on hover */
   transform: translateY(2px);

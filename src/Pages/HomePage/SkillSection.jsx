@@ -1,12 +1,29 @@
 import { FaHeartbeat } from "react-icons/fa";
+import { motion } from "framer-motion";
 
 const SkillSection = () => {
+  const message = "My skill depends on Works";
+
+  const wordArray = message.split(" ");
   return (
     <div className="container mx-auto space-y-6">
       <div className="w-1/2 mx-auto space-y-6 text-center">
         <h1 className="text-3xl font-bold">
-          My skill <span className="text-blue-900 underline">depends</span> on
-          work.
+          {wordArray.map((word, index) => (
+            <motion.span
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{
+                duration: 1,
+                delay: index / 10,
+              }}
+              key={index}
+            >
+              {word}{" "}
+            </motion.span>
+          ))}
+          {/* My skill <span className="text-blue-900 underline">depends</span> on
+          work. */}
         </h1>
         <p className="text-sm font-bold">
           Your Journey to Well-being Starts Here: Unparalleled Care, Unmatched

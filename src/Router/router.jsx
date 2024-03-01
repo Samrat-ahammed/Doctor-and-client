@@ -5,6 +5,7 @@ import SignInPage from "../Pages/Authentication/SignInPage";
 import Advice from "../Pages/AdvicePage.jsx/Advice";
 import Main from "../Pages/LayOut/Main";
 import Doctors from "../Pages/AdvicePage.jsx/DoctorsPage/Doctors";
+import DoctorDetails from "../Pages/AdvicePage.jsx/DoctorsPage/DoctorDetails/DoctorDetails";
 
 export const router = createBrowserRouter([
   {
@@ -22,6 +23,10 @@ export const router = createBrowserRouter([
       {
         path: "/doctors",
         element: <Doctors />,
+      },
+      {
+        path: "/doctorsDetails",
+        element: <DoctorDetails />,
       },
     ],
   },
